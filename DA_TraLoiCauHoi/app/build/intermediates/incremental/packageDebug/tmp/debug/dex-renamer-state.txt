@@ -1,0 +1,7 @@
+#Sat Oct 19 12:06:50 ICT 2019
+base.0=D\:\\DATA\\App_Mobile\\DA_TraLoiCauHoi\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\DATA\\App_Mobile\\DA_TraLoiCauHoi\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
