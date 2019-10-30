@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\4f37a040d795d0eef135b10b20545e3f\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -31,25 +32,27 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:5:5-25:19
+MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:11:5-15:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:5-89
@@ -70,36 +73,50 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TY
 		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:11:9-65
+activity#com.example.da_traloicauhoi.MuaCreditActivity
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-64
+	android:name
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:19-52
+activity#com.example.da_traloicauhoi.TroChoiActivity
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-53
+	android:name
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:19-50
+activity#com.example.da_traloicauhoi.QuanLyTKActivity
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-54
+	android:name
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:19-51
 activity#com.example.da_traloicauhoi.ManHinhChinhActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-67
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-58
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:19-55
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-55
 activity#com.example.da_traloicauhoi.DangKyActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-52
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:9-52
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:19-49
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:19-49
 activity#com.example.da_traloicauhoi.QuenMayKhauActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-57
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:9-57
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:19-54
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:19-54
 activity#com.example.da_traloicauhoi.MainActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41

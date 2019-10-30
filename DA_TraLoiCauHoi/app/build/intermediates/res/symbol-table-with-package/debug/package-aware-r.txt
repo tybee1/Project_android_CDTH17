@@ -232,6 +232,7 @@ attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
 attr logo
 attr logoDescription
+attr max
 attr maxButtonHeight
 attr measureWithLargestChild
 attr multiChoiceItemLayout
@@ -259,6 +260,9 @@ attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
+attr ringColor
+attr ringProgressColor
+attr ringWidth
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -277,6 +281,7 @@ attr splitTrack
 attr srcCompat
 attr state_above_anchor
 attr statusBarBackground
+attr style
 attr subMenuArrow
 attr submitBackground
 attr subtitle
@@ -297,8 +302,11 @@ attr textAppearancePopupMenuHeader
 attr textAppearanceSearchResultSubtitle
 attr textAppearanceSearchResultTitle
 attr textAppearanceSmallPopupMenu
+attr textColor
 attr textColorAlertDialogListItem
 attr textColorSearchUrl
+attr textIsShow
+attr textSize
 attr theme
 attr thickness
 attr thumbTextPadding
@@ -382,9 +390,13 @@ color bright_foreground_material_light
 color button_material_dark
 color button_material_light
 color colorAccent
+color colorDapAn
+color colorDiem
 color colorEdit
 color colorPrimary
 color colorPrimaryDark
+color colorProgressbar
+color colorTroGiup
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -640,9 +652,12 @@ drawable diamon
 drawable diamond
 drawable fb_logo
 drawable gmail
+drawable hoinhom
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_trieuphu
+drawable kimcuong
+drawable loai2dapan
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -655,13 +670,20 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable phone
+drawable quacau
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable traitimfull
+drawable vientraitim
 id ALT
 id CTRL
+id FILL
 id FUNCTION
+id GoiDien
 id META
 id SHIFT
+id STROKE
 id SYM
 id action_bar
 id action_bar_activity_content
@@ -692,15 +714,24 @@ id beginning
 id blocking
 id bottom
 id btnBangXepHang
+id btnCapNhat
 id btnDangKy
 id btnDangKy_dk
 id btnDangnhap
+id btnDapAnA
+id btnDapAnB
+id btnDapAnC
+id btnDapAnD
+id btnKhanGia
 id btnLayLaiMK
 id btnLichSuChoi
+id btnLoai2
 id btnMuaCredit
+id btnQuaCau
 id btnQuanLyTK
 id btnQuenMatKhau
 id btnTroChoiMoi
+id btndungCredit
 id buttonPanel
 id center
 id center_horizontal
@@ -713,6 +744,8 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
+id creditUser
+id creditUser_icon
 id custom
 id customPanel
 id decor_content_parent
@@ -721,11 +754,14 @@ id dimensions
 id direct
 id disableHome
 id edit_query
+id edtDoiMatKhau
+id edtEmail
 id edtEmail_qmk
 id edtMatKhau
 id edtMatKhau_dk
 id edtTenDangNhap
 id edtTenDangNhap_qmk
+id edtTenTK
 id edtXacNhan_dk
 id end
 id expand_activities_button
@@ -733,6 +769,7 @@ id expanded_menu
 id fill
 id fill_horizontal
 id fill_vertical
+id footer
 id forever
 id gone
 id group_divider
@@ -748,6 +785,7 @@ id imgDiamon
 id imgFB
 id imgGM
 id info
+id inforHead
 id invisible
 id italic
 id left
@@ -774,6 +812,7 @@ id radio
 id right
 id right_icon
 id right_side
+id ringProgress
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -818,7 +857,13 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id trogiup
+id txtDemGiay
+id txtDiem
 id txtHoVaTen
+id txtMuadapan
+id txtNoiDungCauHoi
+id txtSoCau
 id uniform
 id up
 id useLogo
@@ -861,7 +906,11 @@ layout abc_tooltip
 layout activity_dang_ky
 layout activity_main
 layout activity_man_hinh_chinh
+layout activity_mua_credit
+layout activity_quan_ly_tk
 layout activity_quen_may_khau
+layout activity_tro_choi
+layout activity_tro_choi_ket_thuc
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1301,6 +1350,7 @@ styleable MenuView android_windowAnimationStyle android_itemTextAppearance andro
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
+styleable RingProgressBar max ringColor ringProgressColor ringWidth style textColor textIsShow textSize
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration

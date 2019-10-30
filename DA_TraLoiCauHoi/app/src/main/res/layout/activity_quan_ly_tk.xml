@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_marginTop ="30dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        icon app-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+            <ImageView
+                android:layout_weight="2"
+                android:id="@+id/iconMain"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/avart"></ImageView>
+            <TextView
+                android:id="@+id/txtHoVaTen"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đổi hình đại diện"></TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="3"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <EditText
+                android:id="@+id/edtTenTK"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:hint="Tài khoản">
+            </EditText>
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:hint="Email">
+            </EditText>
+            <EditText
+                android:id="@+id/edtDoiMatKhau"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:hint="Mật khẩu mới">
+            </EditText>
+            <EditText
+                android:id="@+id/edtXacNhan_dk"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:hint="Xác nhận mật khẩu">
+            </EditText>
+            <Button
+                android:id="@+id/btnCapNhat"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_width="match_parent"
+                android:text="Cập nhật"
+                android:layout_marginTop="10dp"
+                android:textColor="#f8f4f8"
+                android:layout_height="0dp"></Button>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

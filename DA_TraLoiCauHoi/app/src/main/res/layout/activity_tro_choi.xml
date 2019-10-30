@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:weightSum="15"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    Header-->
+    <RelativeLayout
+        android:id="@+id/inforHead"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/creditUser"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:background="#428bca"
+            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="tytruong"></TextView>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:background="@drawable/custom_button"
+                android:weightSum="5"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/vientraitim"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/creditUser_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:background="@drawable/kimcuong"
+            android:layout_height="match_parent"></Button>
+        <Button
+            android:id="@+id/creditUser"
+            android:layout_toLeftOf="@+id/creditUser_icon"
+            android:layout_width="wrap_content"
+
+            android:text="2000"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/custom_button_orange"></Button>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_marginTop ="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_weight="11"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--      Thông tin câu hỏi  -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/txtDiem"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorDiem"
+                    android:layout_height="0dp"
+                    android:text="Điểm : 19000"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:textStyle="bold"
+                    android:textColor="#259dbc"
+                    android:gravity="center"
+                    android:text="Câu hỏi"></TextView>
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/txtSoCau"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="60dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="#DEDEE4"
+                    android:text="1"></TextView>
+
+
+
+
+        </LinearLayout>
+
+<!--        Đáp án và nội dung câu hỏi-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+<!--            Nội dung câu hỏi-->
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/txtNoiDungCauHoi"
+                android:gravity="center"
+                android:textColor="#494949"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Đại ngu là quốc hiệu của triều nào">
+
+            </TextView>
+
+            <!--            Đáp án A-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="A."></TextView>
+                <Button
+                    android:id="@+id/btnDapAnA"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></Button>
+            </LinearLayout>
+            <!--            Đáp án A-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="B."></TextView>
+                <Button
+                    android:id="@+id/btnDapAnB"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></Button>
+            </LinearLayout>
+            <!--            Đáp án A-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="C."></TextView>
+                <Button
+                    android:id="@+id/btnDapAnC"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></Button>
+            </LinearLayout>
+            <!--            Đáp án A-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="D."></TextView>
+                <Button
+                    android:id="@+id/btnDapAnD"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></Button>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    Cấu hình trợ giúp-->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_below="@+id/top"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/ringProgress"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                app:max="30"
+                app:ringColor="@color/colorProgressbar"
+                app:ringProgressColor="@color/colorProgressbar"
+                app:style="FILL"
+                app:textIsShow="true"
+                app:textSize="10sp"></io.netopen.hotbitmapgg.library.view.RingProgressBar>
+            <TextView
+                android:id="@+id/txtDemGiay"
+                android:text="30s"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#3b1d8f"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trogiup"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btnQuaCau"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/quacau"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:id="@+id/btnLoai2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#f4eb49"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/loai2dapan"
+
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:id="@+id/btnKhanGia"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/hoinhom"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:id="@+id/GoiDien"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/phone"
+                android:layout_height="wrap_content"></Button>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@color/colorTroGiup"
+                android:weightSum="2"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtMuadapan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#f4eb49"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:text="100"></TextView>
+                <Button
+                    android:id="@+id/btndungCredit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/kimcuong"
+                    android:layout_height="wrap_content"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
