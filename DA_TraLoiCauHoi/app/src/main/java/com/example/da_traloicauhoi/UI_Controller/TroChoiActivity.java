@@ -1,4 +1,4 @@
-package com.example.da_traloicauhoi;
+package com.example.da_traloicauhoi.UI_Controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,7 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.widget.Toast;
+
+import com.example.da_traloicauhoi.R;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 

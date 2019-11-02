@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\4f37a040d795d0eef135b10b20545e3f\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d382ba9b8c9ea9d7b43a9cfaea0ecdf4\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -23,38 +24,42 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\TY
 MERGED from [androidx.core:core:1.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\07608d1ce0a2b5e25216bbe877b06158\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\04a7b867e647e7eb31182562df2c795a\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dacdedacba9265ce7d335905357ebc3\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9e826201835d091631296bd77f277fec\core-runtime-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\684c19030ab34291fff8f6b761838da8\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\85b59553d84ac8d04663d7d81848664c\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:3:5-42
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:11:5-15:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.core:core:1.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\07608d1ce0a2b5e25216bbe877b06158\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
@@ -62,65 +67,67 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TY
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.example.da_traloicauhoi.MuaCreditActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-64
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-64
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:19-52
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:19-52
 activity#com.example.da_traloicauhoi.TroChoiActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-53
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-53
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:19-50
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:19-50
 activity#com.example.da_traloicauhoi.QuanLyTKActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-54
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-54
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:19-51
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:19-51
 activity#com.example.da_traloicauhoi.ManHinhChinhActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-58
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-58
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-55
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-55
 activity#com.example.da_traloicauhoi.DangKyActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:9-52
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:9-52
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:19-49
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:19-49
 activity#com.example.da_traloicauhoi.QuenMayKhauActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:9-57
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:9-57
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:19-54
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:19-54
 activity#com.example.da_traloicauhoi.MainActivity
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.HotBitmapGG:RingProgressbar:V1.2.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\56470c24eba704a39f92e7bc73cc4432\RingProgressbar-V1.2.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\4f37a040d795d0eef135b10b20545e3f\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\4f37a040d795d0eef135b10b20545e3f\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d382ba9b8c9ea9d7b43a9cfaea0ecdf4\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
@@ -153,6 +160,16 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TY
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\07608d1ce0a2b5e25216bbe877b06158\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\04a7b867e647e7eb31182562df2c795a\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\04a7b867e647e7eb31182562df2c795a\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dacdedacba9265ce7d335905357ebc3\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dacdedacba9265ce7d335905357ebc3\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9e826201835d091631296bd77f277fec\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9e826201835d091631296bd77f277fec\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\684c19030ab34291fff8f6b761838da8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\684c19030ab34291fff8f6b761838da8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -163,21 +180,21 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transf
 MERGED from [androidx.print:print:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\85b59553d84ac8d04663d7d81848664c\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\85b59553d84ac8d04663d7d81848664c\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		ADDED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
-		INJECTED from D:\DATA\App_Mobile\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\854b47ac59f20b6a0c922bde7b1e0434\room-runtime-2.2.1\AndroidManifest.xml:26:13-74

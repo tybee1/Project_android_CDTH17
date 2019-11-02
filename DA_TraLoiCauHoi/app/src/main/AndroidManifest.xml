@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MuaCreditActivity"></activity>
-        <activity android:name=".TroChoiActivity" />
-        <activity android:name=".QuanLyTKActivity" />
-        <activity android:name=".ManHinhChinhActivity" />
-        <activity android:name=".DangKyActivity" />
-        <activity android:name=".QuenMayKhauActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".UI_Controller.MuaCreditActivity"></activity>
+        <activity android:name=".UI_Controller.TroChoiActivity" />
+        <activity android:name=".UI_Controller.QuanLyTKActivity" />
+        <activity android:name=".UI_Controller.ManHinhChinhActivity" />
+        <activity android:name=".UI_Controller.DangKyActivity" />
+        <activity android:name=".UI_Controller.QuenMayKhauActivity" />
+        <activity android:name=".UI_Controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

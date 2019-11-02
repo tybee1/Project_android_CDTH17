@@ -1,8 +1,10 @@
-package com.example.da_traloicauhoi;
+package com.example.da_traloicauhoi.UI_Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.da_traloicauhoi.R;
 
 public class ManHinhChinhActivity extends AppCompatActivity {
 

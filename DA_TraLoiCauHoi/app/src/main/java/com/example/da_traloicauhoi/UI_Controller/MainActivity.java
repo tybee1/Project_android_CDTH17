@@ -1,18 +1,12 @@
-package com.example.da_traloicauhoi;
+package com.example.da_traloicauhoi.UI_Controller;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import io.netopen.hotbitmapgg.library.view.RingProgressBar;
+import com.example.da_traloicauhoi.R;
 
 public class MainActivity extends AppCompatActivity {
 
