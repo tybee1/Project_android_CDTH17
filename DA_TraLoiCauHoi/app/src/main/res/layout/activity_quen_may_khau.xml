@@ -54,6 +54,7 @@
                 android:id="@+id/btnLayLaiMK"
                 android:background="@drawable/custom_button"
                 android:layout_width="match_parent"
+                android:onClick="HandleLayMatKhau"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:layout_height="0dp"

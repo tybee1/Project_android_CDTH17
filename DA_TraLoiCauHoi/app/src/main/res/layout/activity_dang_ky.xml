@@ -34,7 +34,7 @@
             android:layout_height="0dp">
 
             <EditText
-                android:id="@+id/edtTenDangNhap_qmk"
+                android:id="@+id/edtTenDangNhap_dk"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:background="@drawable/custom_edittext"
                 android:hint="Tên đăng nhập"></EditText>
             <EditText
-                android:id="@+id/edtEmail_qmk"
+                android:id="@+id/edtEmail_dk"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -74,6 +74,7 @@
                 android:id="@+id/btnDangKy_dk"
                 android:background="@drawable/custom_button"
                 android:layout_width="match_parent"
+                android:onClick="HandleDangKy"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:layout_height="0dp"

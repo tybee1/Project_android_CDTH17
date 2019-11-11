@@ -722,6 +722,8 @@ id btnDapAnA
 id btnDapAnB
 id btnDapAnC
 id btnDapAnD
+id btnDongY
+id btnHuyMK
 id btnKhanGia
 id btnLayLaiMK
 id btnLichSuChoi
@@ -756,12 +758,16 @@ id disableHome
 id edit_query
 id edtDoiMatKhau
 id edtEmail
+id edtEmail_dk
 id edtEmail_qmk
 id edtMatKhau
+id edtMatKhauMoi
 id edtMatKhau_dk
 id edtTenDangNhap
+id edtTenDangNhap_dk
 id edtTenDangNhap_qmk
 id edtTenTK
+id edtXacNhanMatKhau
 id edtXacNhan_dk
 id end
 id expand_activities_button
@@ -781,6 +787,7 @@ id iconMain
 id icon_group
 id ifRoom
 id image
+id imgAnhDaiDien_Chinh
 id imgDiamon
 id imgFB
 id imgGM
@@ -858,9 +865,11 @@ id title_template
 id top
 id topPanel
 id trogiup
+id txtCredit_ManHinhChinh
 id txtDemGiay
 id txtDiem
 id txtHoVaTen
+id txtHoVaTen_ManHinhChinh
 id txtMuadapan
 id txtNoiDungCauHoi
 id txtSoCau
@@ -911,6 +920,7 @@ layout activity_quan_ly_tk
 layout activity_quen_may_khau
 layout activity_tro_choi
 layout activity_tro_choi_ket_thuc
+layout dialog
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

@@ -45,6 +45,7 @@
            <EditText
                android:id="@+id/edtMatKhau"
                android:layout_weight="1"
+               android:inputType="textPassword"
                android:layout_width="match_parent"
                android:layout_height="0dp"
                android:layout_marginTop="10dp"
@@ -64,6 +65,7 @@
            <Button
                android:id="@+id/btnQuenMatKhau"
                android:layout_weight="1"
+               android:onClick="handleForgetPassword"
                android:background="@drawable/custom_button_qmk"
                android:layout_width="match_parent"
                android:text="Quên mật khẩu"
@@ -73,6 +75,7 @@
            <Button
                android:id="@+id/btnDangKy"
                android:text="Đăng ký"
+               android:onClick="handleRegister"
                android:layout_marginTop="10dp"
                android:layout_weight="1"
                android:background="@drawable/custom_button_dk"
