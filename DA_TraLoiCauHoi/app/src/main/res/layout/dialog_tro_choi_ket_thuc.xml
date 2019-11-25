@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:gravity="center"
+
+    android:background="@drawable/custom_dialog"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textColor="#042CA2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lượt Choi Đã Kết Thúc"></TextView>
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:text="Xin chúc mừng bạn đã đạt được:"
+        android:textColor="#0DAC6A"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDiem_dialog"
+            android:textColor="#042CA2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.000"></TextView>
+
+        <TextView
+
+            android:text=" điểm"
+            android:textColor="#0DAC6A"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnMuaLuotChoi"
+        android:background="@drawable/custom_button_qmk"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:textColor="#CDDC39"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Thêm 1 lượt chơi: "></TextView>
+        <TextView
+            android:text=" 300 "
+            android:textColor="#CDDC39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:src="@drawable/diamond"
+            android:layout_width="15dp"
+            android:layout_gravity="center"
+            android:layout_height="15dp"></ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnKetThuc"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_qmk"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:textColor="#CDDC39"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Xin Cám ơn"></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

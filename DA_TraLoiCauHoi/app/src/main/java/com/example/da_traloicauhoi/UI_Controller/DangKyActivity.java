@@ -41,31 +41,38 @@ public class DangKyActivity extends AppCompatActivity {
 
 
         String mTenDangNhap = edtTenDangNhap.getText().toString();
-            Log.d("Tên đăng nhập", mTenDangNhap);
         String mMatKhau = edtMatKhau.getText().toString();
-            Log.d("Mật khẩu", mMatKhau);
         String mEmail = edtEmail.getText().toString();
-            Log.d("Email", mEmail);
         String mXacNhanMatKhau = edtXacNhanMatKhau.getText().toString();
-            Log.d("Xác nhận mật khẩu", mXacNhanMatKhau);
 
-        if(mMatKhau.compareTo(mXacNhanMatKhau) == 0){
-            Map<String, String> param = new HashMap<>();
-            param.put("ten_dang_nhap", mTenDangNhap);
-            param.put("mat_khau", mMatKhau);
-            param.put("email", mEmail);
 
-            new APIAsyncTask(this, CallAPI.POST,param){
-                @Override
-                public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
-                    super.XuLy(jsonObject, context);
-                    if(jsonObject.getBoolean("success")==true){
-                        Log.d("Đăng Ký", "ok");
+        //kiểm tra tài khản
+        //kiểm tra email
+        //kiểm tra mật khẩu
+        //xác nhận mật khẩu
+
+        //kiểm trả khớp mật khẩu và != null
+        if (mMatKhau.compareTo(mXacNhanMatKhau) == 0 && mMatKhau != null) {
+            //---Start call api
+                Map<String, String> param = new HashMap<>();
+                param.put("ten_dang_nhap", mTenDangNhap);
+                param.put("mat_khau", mMatKhau);
+                param.put("email", mEmail);
+
+                //gọi API đăng ký
+                new APIAsyncTask(this, CallAPI.POST, param) {
+                    @Override
+                    public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
+                        super.XuLy(jsonObject, context);
+                        if (jsonObject.getBoolean("success") == true) {
+                            Toast.makeText(context, "Đăng ký thành công.", Toast.LENGTH_SHORT).show();
+                        } else
+                            Toast.makeText(context, "Đăng ký thất bại.", Toast.LENGTH_SHORT).show();
                     }
-                    else
-                        Log.d("Đăng Ký", "No");
-                }
-            }.execute("http://10.0.2.2:8000/api/nguoi-choi/dang-ky");
+                }.execute("http://10.0.2.2:8000/api/nguoi-choi/dang-ky");
+            //---end call api
+        } else {
+            Toast.makeText(this,"Sai định dạng.",Toast.LENGTH_SHORT).show();
         }
 
     }

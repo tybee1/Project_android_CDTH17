@@ -24,8 +24,9 @@ public class CallAPI {
 
     public static void RequestGET(String url, final Map<String, String>[] paramets, Context context, final JSONObject[] jsonObject, final boolean[] flag){
 
-        final RequestQueue requestQueue =  Volley.newRequestQueue(context);
+        final RequestQueue requestQueue =  RequestSingleTon.getInstance(context).getRequestQueue();
 
+        //biến request
         StringRequest   stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -38,13 +39,12 @@ public class CallAPI {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        Log.d("Respone_Get","ok");
                     }
-                },
+                },//lỗi kết nối
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
+                        flag[0] = true;
                     }
                 }){
             @Override
@@ -56,7 +56,7 @@ public class CallAPI {
     }
     public static void RequestPost(String url, final Map<String, String>[] paramets, Context context,final JSONObject[] jsonObject, final boolean[] flag){
 
-        final RequestQueue requestQueue =  Volley.newRequestQueue(context);
+        final RequestQueue requestQueue =  RequestSingleTon.getInstance(context).getRequestQueue();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
@@ -67,15 +67,20 @@ public class CallAPI {
                         try {
                             jsonObject[0] = new JSONObject(response);
                         } catch (JSONException e) {
-                            e.printStackTrace();
+                            Log.d("onResponse_Exception",e.toString());;
                         }
-                        Log.d("Respone_Post","ok");
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
+                        String jsonString = "{'success'=>false}";
+                        try {
+                            jsonObject[0] = new JSONObject(jsonString);
+                        } catch (JSONException e) {
+                            Log.d("ErrorResponse_Exception",e.toString());;
+                        }
+                        flag[0]=true;
                     }
                 }){
             @Override

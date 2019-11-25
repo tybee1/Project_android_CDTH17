@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name="com.example.da_traloicauhoi.UI_Controller.LinhVucActivity" />
         <activity android:name="com.example.da_traloicauhoi.UI_Controller.MuaCreditActivity" />
         <activity android:name="com.example.da_traloicauhoi.UI_Controller.TroChoiActivity" />
         <activity android:name="com.example.da_traloicauhoi.UI_Controller.QuanLyTKActivity" />

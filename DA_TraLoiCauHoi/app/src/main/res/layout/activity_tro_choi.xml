@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
-            android:layout_toLeftOf="@+id/creditUser"
+            android:layout_toLeftOf="@+id/txtCredit_TroChoi"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="30dp"
@@ -25,6 +25,7 @@
             android:gravity="center"
             android:layout_height="match_parent">
             <TextView
+                android:id="@+id/txtName_TroChoi"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -37,33 +38,38 @@
                 android:weightSum="5"
                 android:layout_height="match_parent">
                 <ImageView
+                    android:id="@+id/imgTraiTim_1"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/traitimfull"></ImageView>
                 <ImageView
+                    android:id="@+id/imgTraiTim_2"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/traitimfull"></ImageView>
                 <ImageView
+                    android:id="@+id/imgTraiTim_3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
                     android:layout_height="wrap_content"
                     android:background="@drawable/traitimfull"></ImageView>
                 <ImageView
+                    android:id="@+id/imgTraiTim_4"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
                     android:layout_height="wrap_content"
                     android:background="@drawable/traitimfull"></ImageView>
                 <ImageView
+                    android:id="@+id/imgTraiTim_5"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
                     android:layout_height="wrap_content"
-                    android:background="@drawable/vientraitim"></ImageView>
+                    android:background="@drawable/traitimfull"></ImageView>
             </LinearLayout>
         </LinearLayout>
         <Button
@@ -74,15 +80,14 @@
             android:layout_width="50dp"
             android:background="@drawable/kimcuong"
             android:layout_height="match_parent"></Button>
-        <Button
-            android:id="@+id/creditUser"
+        <TextView
+            android:id="@+id/txtCredit_TroChoi"
             android:layout_toLeftOf="@+id/creditUser_icon"
             android:layout_width="wrap_content"
-
+            android:gravity="center"
             android:text="2000"
             android:layout_height="match_parent"
-
-            android:background="@drawable/custom_button_orange"></Button>
+            android:background="@drawable/custom_button_orange"></TextView>
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/top"
@@ -105,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp">
                 <TextView
-                    android:id="@+id/txtDiem"
+                    android:id="@+id/txtDiem_TroChoi"
                     android:layout_weight="2"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -161,6 +166,7 @@
 
             <!--            Đáp án A-->
             <LinearLayout
+                android:id="@+id/lnDapAnA"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:background="@drawable/custom_button"
@@ -176,18 +182,19 @@
                     android:background="@drawable/custom_button"
                     android:layout_height="match_parent"
                     android:text="A."></TextView>
-                <Button
-                    android:id="@+id/btnDapAnA"
+                <TextView
+                    android:id="@+id/txtDapAnA"
                     android:layout_weight="5"
                     android:background="@drawable/custom_button"
                     android:layout_width="0dp"
+                    android:gravity="center"
                     android:text="Triều Ngô"
-                    android:textAllCaps="false"
                     android:textColor="@color/colorDapAn"
-                    android:layout_height="match_parent"></Button>
+                    android:layout_height="match_parent"></TextView>
             </LinearLayout>
-            <!--            Đáp án A-->
+            <!--            Đáp án B-->
             <LinearLayout
+                android:id="@+id/lnDapAnB"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:background="@drawable/custom_button"
@@ -203,18 +210,19 @@
                     android:background="@drawable/custom_button"
                     android:layout_height="match_parent"
                     android:text="B."></TextView>
-                <Button
-                    android:id="@+id/btnDapAnB"
+                <TextView
+                    android:id="@+id/txtDapAnB"
                     android:layout_weight="5"
                     android:background="@drawable/custom_button"
                     android:layout_width="0dp"
                     android:text="Triều Ngô"
-                    android:textAllCaps="false"
+                    android:gravity="center"
                     android:textColor="@color/colorDapAn"
-                    android:layout_height="match_parent"></Button>
+                    android:layout_height="match_parent"></TextView>
             </LinearLayout>
-            <!--            Đáp án A-->
+            <!--            Đáp án C-->
             <LinearLayout
+                android:id="@+id/lnDapAnC"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:background="@drawable/custom_button"
@@ -230,18 +238,19 @@
                     android:background="@drawable/custom_button"
                     android:layout_height="match_parent"
                     android:text="C."></TextView>
-                <Button
-                    android:id="@+id/btnDapAnC"
+                <TextView
+                    android:id="@+id/txtDapAnC"
                     android:layout_weight="5"
                     android:background="@drawable/custom_button"
                     android:layout_width="0dp"
                     android:text="Triều Ngô"
-                    android:textAllCaps="false"
+                    android:gravity="center"
                     android:textColor="@color/colorDapAn"
-                    android:layout_height="match_parent"></Button>
+                    android:layout_height="match_parent"></TextView>
             </LinearLayout>
-            <!--            Đáp án A-->
+            <!--            Đáp án D-->
             <LinearLayout
+                android:id="@+id/lnDapAnD"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:background="@drawable/custom_button"
@@ -257,15 +266,15 @@
                     android:background="@drawable/custom_button"
                     android:layout_height="match_parent"
                     android:text="D."></TextView>
-                <Button
-                    android:id="@+id/btnDapAnD"
+                <TextView
+                    android:id="@+id/txtDapAnD"
                     android:layout_weight="5"
                     android:background="@drawable/custom_button"
                     android:layout_width="0dp"
                     android:text="Triều Ngô"
-                    android:textAllCaps="false"
+                    android:gravity="center"
                     android:textColor="@color/colorDapAn"
-                    android:layout_height="match_parent"></Button>
+                    android:layout_height="match_parent"></TextView>
             </LinearLayout>
 
 
@@ -302,7 +311,6 @@
                 android:layout_width="40dp"
                 android:layout_weight="1"
                 android:layout_height="40dp"
-                app:max="30"
                 app:ringColor="@color/colorProgressbar"
                 app:ringProgressColor="@color/colorProgressbar"
                 app:style="FILL"

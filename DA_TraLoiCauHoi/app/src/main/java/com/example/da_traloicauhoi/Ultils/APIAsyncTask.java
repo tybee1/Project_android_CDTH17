@@ -24,6 +24,7 @@ public class APIAsyncTask extends AsyncTask<String,Void,String> implements XuLyJ
     private boolean flagRunProgressBar;
     private final JSONObject[] jsonObjects;
     private  final Map<String, String>[] paramets;
+    private String TitleProgress, MessageProgress;
 
 
 
@@ -33,6 +34,17 @@ public class APIAsyncTask extends AsyncTask<String,Void,String> implements XuLyJ
         this.paramets = new HashMap[1];
         this.paramets[0] = paramets;
         this.METHOD = METHOD;
+        this.flagRunProgressBar = false;
+    }
+
+    public APIAsyncTask(Context context,int METHOD, Map<String, String> paramets,String TitleProgress, String MessageProgress) {
+        this.context = context;
+        this.jsonObjects = new JSONObject[1];
+        this.paramets = new HashMap[1];
+        this.paramets[0] = paramets;
+        this.METHOD = METHOD;
+        this.TitleProgress = TitleProgress;
+        this.MessageProgress = MessageProgress;
         this.flagRunProgressBar = true;
 
 
@@ -43,15 +55,16 @@ public class APIAsyncTask extends AsyncTask<String,Void,String> implements XuLyJ
     protected void onPreExecute() {
         super.onPreExecute();
 
-       createProgressBar();
+        if(flagRunProgressBar)
+            createProgressBar();
 
 
     }
 
     public void createProgressBar(){
         progressDialog = new ProgressDialog(context);
-        progressDialog.setTitle("Login");
-        progressDialog.setMessage("Please wait...");
+        progressDialog.setTitle(this.TitleProgress);
+        progressDialog.setMessage(this.MessageProgress);
         progressDialog.show();
     }
 
@@ -59,6 +72,8 @@ public class APIAsyncTask extends AsyncTask<String,Void,String> implements XuLyJ
     //làm tác vụ trong nền
     @Override
     protected String doInBackground(String... urls) {
+
+        //đặt cờ hiệu chờ phản hồi
         final boolean [] flag = new boolean[1];
 
         //call API
@@ -80,15 +95,17 @@ public class APIAsyncTask extends AsyncTask<String,Void,String> implements XuLyJ
 
         //khởi chạy một interface tự định nghĩa
         try {
+            Log.d("result",jsonObjects[0].toString());
             XuLy(jsonObjects[0], context);
 
         } catch (JSONException e) {
+            //Log.d("xuly",e.toString());
             e.printStackTrace();
+
         }
 
         if(flagRunProgressBar)
             progressDialog.dismiss();
-        Log.d("onPost", "ok");
 
     }
 

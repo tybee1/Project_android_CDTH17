@@ -1,5 +1,6 @@
 package com.example.da_traloicauhoi.UI_Controller;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -9,9 +10,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.CustomDialog;
+import com.example.da_traloicauhoi.Ultils.SharedPreference;
 import com.example.da_traloicauhoi.Ultils.test;
 import com.example.da_traloicauhoi.Ultils.CallAPI;
 
@@ -33,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
         //initialize views
         InitView();
-        new test(this).execute();
 
     }
 
@@ -47,30 +50,40 @@ public class MainActivity extends AppCompatActivity {
     public void handleLogin(View view) {
         String ten_dang_nhap = edtTenDangNhap.getText().toString();
         String mat_khau = edtMatKhau.getText().toString();
-        String result = "";
-         Map<String, String> map = new HashMap<>();
+
+
+            //tham số request
+            Map<String, String> map = new HashMap<>();
+
         map.put("ten_dang_nhap",ten_dang_nhap);
         map.put("mat_khau", mat_khau);
 
 
-        new APIAsyncTask(this, CallAPI.POST,map){
+
+        //tạo asyntask đẻ gọi api
+        new APIAsyncTask(this, CallAPI.POST,map,"Login", "Waiting...."){
             @Override
             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
-                super.XuLy(jsonObject, context);
-                Log.d("Response", jsonObject.toString());
-                if(jsonObject.getBoolean("success") == true)
-                {
-                    Intent intent = new Intent(context,ManHinhChinhActivity.class);
-                    intent.putExtra("json",jsonObject.getJSONArray("data").get(0).toString());
+                if (jsonObject.getBoolean("success") == true) {
+
+                    //tạo đối tượng JsonNguoiChoi
+                    JSONObject jsonNguoiChoi = (JSONObject) jsonObject.getJSONArray("data").get(0);
+                    //luu file anh
+                    SharedPreference.writeFile(context,jsonNguoiChoi.getString("ten_dang_nhap"),jsonObject.getString("image"));
+
+                    //Gửi đối tượng người chơi qua 1 activity
+                    Intent intent = new Intent(context, ManHinhChinhActivity.class);
+                    intent.putExtra("json", jsonNguoiChoi.toString());
+
                     startActivity(intent);
+                } else {
+                    Toast.makeText(context,"Đăng nhập thất bại",Toast.LENGTH_SHORT).show();
                 }
             }
 
         }.execute("http://10.0.2.2:8000/api/nguoi-choi/xac-thuc");
 
 
-
-//        openActivity(ManHinhChinhActivity.class);
     }
 
     public void handleForgetPassword(View view) {
@@ -82,5 +95,8 @@ public class MainActivity extends AppCompatActivity {
     public void handleRegister(View view) {
         Intent intent = new Intent(this,DangKyActivity.class);
         startActivity(intent);
+    }
+
+    public void HandleAPIGmail(View view){
     }
 }
