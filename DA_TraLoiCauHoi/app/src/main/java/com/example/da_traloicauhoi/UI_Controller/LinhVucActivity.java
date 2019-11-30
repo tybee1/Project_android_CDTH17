@@ -6,14 +6,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
 import org.json.JSONArray;
 import org.json.JSONException;

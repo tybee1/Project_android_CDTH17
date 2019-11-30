@@ -1,32 +1,26 @@
 package com.example.da_traloicauhoi.UI_Controller;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.da_traloicauhoi.Object_Model.CauHinhCauHoi;
 import com.example.da_traloicauhoi.Object_Model.CauHoi;
 import com.example.da_traloicauhoi.Object_Model.ChiTietLuotChoi;
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
-import com.example.da_traloicauhoi.Ultils.CustomDialog;
-import com.example.da_traloicauhoi.Ultils.RingProgressbarAsyntask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
+import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.RingProgressbarAsyntask;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +28,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;

@@ -9,15 +9,16 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\TYTRUONG\.gradle\cache
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\83854f0fd8f5ed294035147d4e7a6c15\room-runtime-2.2.1\AndroidManifest.xml:17:1-30:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2e5214b032af4420873e066c681da274\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d528e4a95537e6fd748364050a23264e\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\5fa9083dab59ec66a8e8d2104bc9b94b\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
@@ -135,6 +136,8 @@ MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\83854f0fd8f5ed294035147d4e7a6c15\room-runtime-2.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2e5214b032af4420873e066c681da274\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2e5214b032af4420873e066c681da274\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d528e4a95537e6fd748364050a23264e\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\d528e4a95537e6fd748364050a23264e\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -143,6 +146,8 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\TYTRUONG\.gradle
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -151,8 +156,6 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\TYT
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44

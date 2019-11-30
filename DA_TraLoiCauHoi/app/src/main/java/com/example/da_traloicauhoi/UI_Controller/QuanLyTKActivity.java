@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
@@ -19,8 +18,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
 
 import org.json.JSONException;

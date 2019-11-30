@@ -11,9 +11,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CustomDialog;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,6 +26,7 @@ public class QuenMayKhauActivity extends AppCompatActivity {
     private Button btnDongY, btnHuyMK;
     private EditText edtMatKhauMoi, edtXacNhanMK;
     private String mMatKhau;
+
 
 
     @Override

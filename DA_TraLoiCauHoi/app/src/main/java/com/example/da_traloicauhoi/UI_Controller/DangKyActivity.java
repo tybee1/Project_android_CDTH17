@@ -4,14 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;

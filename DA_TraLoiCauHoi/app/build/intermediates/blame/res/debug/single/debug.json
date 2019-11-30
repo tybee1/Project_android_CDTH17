@@ -24,12 +24,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -92,20 +92,20 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
@@ -140,12 +140,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_fast_out_slow_in.xml.flat",
@@ -164,12 +164,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -244,12 +244,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_checked_icon_null_animation.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_checked_icon_null_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material_anim.xml.flat",
@@ -276,12 +276,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
@@ -308,16 +308,16 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hoinhom.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\drawable\\hoinhom.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hoinhom.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\drawable\\hoinhom.png"
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
@@ -524,20 +524,20 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\7f6c41cc2a14c0fbaa8d0166c17dc544\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -560,12 +560,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -588,12 +588,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -696,12 +696,12 @@
         "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_linh_vuc.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\layout\\activity_linh_vuc.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\TYTRUONG\\.gradle\\caches\\transforms-2\\files-2.1\\f5bdf8930f5b0dade80802408310dda6\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quacau.png.flat",
@@ -1662,6 +1662,10 @@
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dang_ky.xml.flat",
         "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\layout\\activity_dang_ky.xml"
+    },
+    {
+        "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_credit.xml.flat",
+        "source": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\src\\main\\res\\layout\\item_credit.xml"
     },
     {
         "merged": "C:\\Users\\TYTRUONG\\Documents\\GitHub\\SanPham\\Project_android_CDTH17\\DA_TraLoiCauHoi\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",

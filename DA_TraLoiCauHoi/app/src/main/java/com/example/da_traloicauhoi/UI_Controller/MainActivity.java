@@ -3,21 +3,18 @@ package com.example.da_traloicauhoi.UI_Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.APIAsyncTask;
-import com.example.da_traloicauhoi.Ultils.CustomDialog;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
-import com.example.da_traloicauhoi.Ultils.test;
-import com.example.da_traloicauhoi.Ultils.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -52,36 +49,39 @@ public class MainActivity extends AppCompatActivity {
         String mat_khau = edtMatKhau.getText().toString();
 
 
+        if (ten_dang_nhap.equals("") || mat_khau.equals("")) {
+            new CustomDialog(this, "Thông báo", "Tài khoản và mật khẩu không được trống.", "Ok", CustomDialog.SIZE_M).show();
+        } else {
             //tham số request
             Map<String, String> map = new HashMap<>();
 
-        map.put("ten_dang_nhap",ten_dang_nhap);
-        map.put("mat_khau", mat_khau);
+            map.put("ten_dang_nhap",ten_dang_nhap);
+            map.put("mat_khau", mat_khau);
 
+            //tạo asyntask đẻ gọi api
+            new APIAsyncTask(this, CallAPI.POST,map,"Login", "Waiting...."){
+                @Override
+                public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
+                    if (jsonObject.getBoolean("success") == true) {
 
+                        //tạo đối tượng JsonNguoiChoi
+                        JSONObject jsonNguoiChoi = (JSONObject) jsonObject.getJSONArray("data").get(0);
+                        //luu file anh
+                        SharedPreference.writeFile(context,jsonNguoiChoi.getString("ten_dang_nhap"),jsonObject.getString("image"));
 
-        //tạo asyntask đẻ gọi api
-        new APIAsyncTask(this, CallAPI.POST,map,"Login", "Waiting...."){
-            @Override
-            public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
-                if (jsonObject.getBoolean("success") == true) {
+                        //Gửi đối tượng người chơi qua 1 activity
+                        Intent intent = new Intent(context, ManHinhChinhActivity.class);
+                        intent.putExtra("json", jsonNguoiChoi.toString());
 
-                    //tạo đối tượng JsonNguoiChoi
-                    JSONObject jsonNguoiChoi = (JSONObject) jsonObject.getJSONArray("data").get(0);
-                    //luu file anh
-                    SharedPreference.writeFile(context,jsonNguoiChoi.getString("ten_dang_nhap"),jsonObject.getString("image"));
-
-                    //Gửi đối tượng người chơi qua 1 activity
-                    Intent intent = new Intent(context, ManHinhChinhActivity.class);
-                    intent.putExtra("json", jsonNguoiChoi.toString());
-
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(context,"Đăng nhập thất bại",Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
+                    } else {
+                        new CustomDialog(context, "Thông báo", "Sai tài khoản hoặc mật khẩu.", "Ok", CustomDialog.SIZE_M).show();
+                    }
                 }
-            }
 
-        }.execute("http://10.0.2.2:8000/api/nguoi-choi/xac-thuc");
+            }.execute("http://10.0.2.2:8000/api/nguoi-choi/xac-thuc");
+
+        }
 
 
     }
