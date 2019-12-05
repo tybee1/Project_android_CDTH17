@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
+import com.example.da_traloicauhoi.Ultils.Algorithrm;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void handleLogin(View view) {
+
+
         String ten_dang_nhap = edtTenDangNhap.getText().toString();
         String mat_khau = edtMatKhau.getText().toString();
 
@@ -59,27 +64,24 @@ public class MainActivity extends AppCompatActivity {
             map.put("mat_khau", mat_khau);
 
             //tạo asyntask đẻ gọi api
-            new APIAsyncTask(this, CallAPI.POST,map,"Login", "Waiting...."){
+            new API_AsyncTask(this, NetworkUtils.POST,map,"Login", "Waiting...."){
                 @Override
                 public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
                     if (jsonObject.getBoolean("success") == true) {
-
                         //tạo đối tượng JsonNguoiChoi
                         JSONObject jsonNguoiChoi = (JSONObject) jsonObject.getJSONArray("data").get(0);
                         //luu file anh
                         SharedPreference.writeFile(context,jsonNguoiChoi.getString("ten_dang_nhap"),jsonObject.getString("image"));
-
                         //Gửi đối tượng người chơi qua 1 activity
                         Intent intent = new Intent(context, ManHinhChinhActivity.class);
                         intent.putExtra("json", jsonNguoiChoi.toString());
-
                         startActivity(intent);
                     } else {
                         new CustomDialog(context, "Thông báo", "Sai tài khoản hoặc mật khẩu.", "Ok", CustomDialog.SIZE_M).show();
                     }
                 }
 
-            }.execute("http://10.0.2.2:8000/api/nguoi-choi/xac-thuc");
+            }.execute("nguoi-choi/xac-thuc");
 
         }
 

@@ -10,7 +10,9 @@ import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -59,16 +61,15 @@ public class DangKyActivity extends AppCompatActivity {
                 param.put("email", mEmail);
 
                 //gọi API đăng ký
-                new APIAsyncTask(this, CallAPI.POST, param) {
+                new API_AsyncTask(this, NetworkUtils.POST, param) {
                     @Override
                     public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
-                        super.XuLy(jsonObject, context);
                         if (jsonObject.getBoolean("success") == true) {
                             Toast.makeText(context, "Đăng ký thành công.", Toast.LENGTH_SHORT).show();
                         } else
                             Toast.makeText(context, "Đăng ký thất bại.", Toast.LENGTH_SHORT).show();
                     }
-                }.execute("http://10.0.2.2:8000/api/nguoi-choi/dang-ky");
+                }.execute("nguoi-choi/dang-ky");
             //---end call api
         } else {
             Toast.makeText(this,"Sai định dạng.",Toast.LENGTH_SHORT).show();

@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
@@ -54,15 +56,13 @@ public class QuenMayKhauActivity extends AppCompatActivity {
         paramet.put("ten_dang_nhap",mTenDangNhap);
         paramet.put("email", mEmail);
 
-        new APIAsyncTask(this,CallAPI.POST,paramet){
+        new API_AsyncTask(this,NetworkUtils.POST,paramet){
             @Override
             public void XuLy(JSONObject jsonObject, final Context context) throws JSONException {
                 if (jsonObject.getBoolean("success") == true) {
                     new CustomDialog(context) {
                         @Override
                         protected void onCreate(Bundle savedInstanceState) {
-                            super.onCreate(savedInstanceState);
-
                             requestWindowFeature(Window.FEATURE_NO_TITLE);
                             setContentView(R.layout.dialog_quen_mat_khau);
                             setTitle("Đổi Mật Khẩu");
@@ -89,7 +89,7 @@ public class QuenMayKhauActivity extends AppCompatActivity {
                                     if (mMatKhauMoi.equals(mXacNhanMK)) {
                                         paramet.put("mat_khau", mMatKhauMoi);
 
-                                        new APIAsyncTask(context, CallAPI.POST, paramet) {
+                                        new API_AsyncTask(context, NetworkUtils.POST, paramet) {
                                             @Override
                                             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
                                                 if (jsonObject.getBoolean("success") == true) {
@@ -101,7 +101,7 @@ public class QuenMayKhauActivity extends AppCompatActivity {
 
                                                 }
                                             }
-                                        }.execute("http://10.0.2.2:8000/api/nguoi-choi/cap-nhat/mat-khau");
+                                        }.execute("nguoi-choi/cap-nhat/mat-khau");
                                     } else {
                                         Toast.makeText(context, "Sai mật khẩu.", Toast.LENGTH_SHORT).show();
                                     }
@@ -116,7 +116,7 @@ public class QuenMayKhauActivity extends AppCompatActivity {
                     Toast.makeText(context,"Tài khoản hoặc email không tồn tại.",Toast.LENGTH_SHORT).show();
                 }
             }
-        }.execute("http://10.0.2.2:8000/api/nguoi-choi/quen-mat-khau/xac-thuc");
+        }.execute("nguoi-choi/quen-mat-khau/xac-thuc");
 
     }
 }

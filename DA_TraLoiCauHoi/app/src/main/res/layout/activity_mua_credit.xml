@@ -22,7 +22,7 @@
             android:layout_height="0dp">
             <LinearLayout
                 android:layout_alignParentStart="true"
-                android:layout_toLeftOf="@id/creditUser"
+                android:layout_toLeftOf="@id/txtCredit_Muacredit"
                 android:orientation="horizontal"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="30dp"
@@ -32,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
+                    android:id="@+id/txtUsername_MuaCredit"
                     android:layout_width="0dp"
                     android:paddingLeft="5dp"
                     android:layout_weight="1"
@@ -51,15 +52,15 @@
                 android:layout_width="50dp"
                 android:background="@drawable/kimcuong"
                 android:layout_height="match_parent"></Button>
-            <Button
-                android:id="@+id/creditUser"
+            <TextView
+                android:id="@+id/txtCredit_Muacredit"
                 android:layout_toLeftOf="@+id/creditUser_icon"
                 android:layout_width="wrap_content"
 
                 android:text="2000"
                 android:layout_height="match_parent"
 
-                android:background="@drawable/custom_button_orange"></Button>
+                android:background="@drawable/custom_button_orange"></TextView>
         </RelativeLayout>
         <TextView
             android:layout_weight="3"
@@ -81,111 +82,6 @@
     </LinearLayout>
 
 
-
-    <!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:weightSum="2"-->
-<!--        android:layout_weight="1">-->
-<!--            <LinearLayout-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:background="@color/colorTroGiup"-->
-<!--                android:weightSum="4"-->
-<!--                android:layout_marginLeft="5dp"-->
-<!--                android:layout_height="wrap_content">-->
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="#f4eb49"-->
-<!--                    android:textSize="20sp"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:text="5.000"></TextView>-->
-<!--                <Button-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_weight="3"-->
-<!--                    android:background="@drawable/kimcuong"-->
-<!--                    android:layout_height="0dp"></Button>-->
-<!--            </LinearLayout>-->
-<!--            <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:background="@color/colorTroGiup"-->
-<!--            android:weightSum="4"-->
-<!--            android:layout_marginLeft="5dp"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:textColor="#f4eb49"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_height="0dp"-->
-<!--                android:text="3.000"></TextView>-->
-<!--            <Button-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="3"-->
-<!--                android:background="@drawable/kimcuong"-->
-<!--                android:layout_height="0dp"></Button>-->
-<!--        </LinearLayout>-->
-<!--    </LinearLayout>-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:weightSum="2"-->
-<!--        android:layout_weight="1">-->
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:background="@color/colorTroGiup"-->
-<!--            android:weightSum="4"-->
-<!--            android:layout_marginLeft="5dp"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:textColor="#f4eb49"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_height="0dp"-->
-<!--                android:text="1.000"></TextView>-->
-<!--            <Button-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="3"-->
-<!--                android:background="@drawable/kimcuong"-->
-<!--                android:layout_height="0dp"></Button>-->
-<!--        </LinearLayout>-->
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:background="@color/colorTroGiup"-->
-<!--            android:weightSum="4"-->
-<!--            android:layout_marginLeft="5dp"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center"-->
-<!--                android:textColor="#f4eb49"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_height="0dp"-->
-<!--                android:text="500"></TextView>-->
-<!--            <Button-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_weight="3"-->
-<!--                android:background="@drawable/kimcuong"-->
-<!--                android:layout_height="0dp"></Button>-->
-<!--        </LinearLayout>-->
-<!--    </LinearLayout>-->
 
 
 

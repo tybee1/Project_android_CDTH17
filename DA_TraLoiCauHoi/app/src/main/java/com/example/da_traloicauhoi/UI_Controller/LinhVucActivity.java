@@ -11,7 +11,9 @@ import android.widget.TextView;
 
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -68,10 +70,9 @@ public class LinhVucActivity extends AppCompatActivity implements View.OnClickLi
             e.printStackTrace();
         }
 
-        new APIAsyncTask(this, CallAPI.GET,null,"Get Data", "Loading..."){
+        new API_AsyncTask(this, NetworkUtils.GET,null,"Get Data", "Loading..."){
             @Override
             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
-
                 //gán nội dung các lĩnh vực
                 if (jsonObject.getBoolean("success") == true) {
                     JSONArray dataCauHoi = jsonObject.getJSONArray("data");
@@ -81,7 +82,7 @@ public class LinhVucActivity extends AppCompatActivity implements View.OnClickLi
                     }
                 }
             }
-        }.execute("http://10.0.2.2:8000/api/linh-vuc");
+        }.execute("linh-vuc");
     }
 
     public void StartActivity(int id_LinhVuc) {

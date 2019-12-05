@@ -80,6 +80,7 @@ public class ManHinhChinhActivity extends AppCompatActivity {
 
     public void HandleMuaCredit(View view) {
         Intent  intent = new Intent(this, MuaCreditActivity.class);
+        intent.putExtra("json",jsonObject.toString());
         startActivity(intent);
     }
 

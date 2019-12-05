@@ -18,7 +18,9 @@ import com.example.da_traloicauhoi.Object_Model.CauHoi;
 import com.example.da_traloicauhoi.Object_Model.ChiTietLuotChoi;
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.RingProgressbarAsyntask;
 
@@ -124,7 +126,7 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
         params.put("linh_vuc_id",linh_vuc_id+"");
 
         //load danh sách câu hỏi
-        new APIAsyncTask(this, CallAPI.POST,params,"Get DaTa", "Loading....."){
+        new API_AsyncTask(this, NetworkUtils.POST,params,"Get DaTa", "Loading....."){
             @Override
             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
 
@@ -138,11 +140,10 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
                     countDown(true);
                 }
             }
-        }.execute("http://10.0.2.2:8000/api/cau-hoi");
-
+        }.execute("cau-hoi");
 
         //load cấu hình câu hỏi
-        new APIAsyncTask(this, CallAPI.GET,null){
+        new API_AsyncTask(this, NetworkUtils.GET,null){
             @Override
             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
 
@@ -154,7 +155,7 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
                     }
                 }
             }
-        }.execute("http://10.0.2.2:8000/api/cau-hoi/cau-hinh-diem-cau-hoi");
+        }.execute("cau-hoi/cau-hinh-diem-cau-hoi");
 
     }
 
@@ -167,8 +168,6 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
         mListDapAn[3].setText(cauHoi.getPhuong_an_d());
         mSoCau.setText(ChiTietLuotChoi.mIndex_CauHoiHienTai + "");
         mDiem.setText("Điểm: " + ChiTietLuotChoi.mTongTiem);
-        //tăng vị trí câu hiện tại
-        ChiTietLuotChoi.mIndex_CauHoiHienTai++;
     }
 
     //start/stop progress
@@ -182,23 +181,35 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     //xử lý chọn đáp án
-    public void XuLyDieuKienDapAn(String stringDapAn) {
+    public void XuLyDieuKienDapAn(final String stringDapAn) {
+        //dừng đếm giây
         countDown(false);
+
         //đáp án đúng
         if (mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai).getDap_an().equals(stringDapAn)) {
+
+            //Thêm chi tiết sau khi xử lý đúng sai
+            ThemChiTietLuotChoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai),stringDapAn);
             //tăng điểm
             ChiTietLuotChoi.mTongTiem = ChiTietLuotChoi.mTongTiem + mListCauHinhDiemCauHoi.get(ChiTietLuotChoi.mThuTuDiemCauHoi++).getDiem();
-            SetCauHoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai));
+
+            //Thay đổi câu hỏi mới
+            SetCauHoi(mListCauHoi.get(++ChiTietLuotChoi.mIndex_CauHoiHienTai));
             countDown(true);
         }//đáp án sai
         else{
+
+            //Thêm chi tiết sau khi xử lý đúng sai
+            ThemChiTietLuotChoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai),stringDapAn);
+
+            //create customDialog
             new CustomDialog(this) {
                 @Override
                 protected void onCreate(Bundle savedInstanceState) {
-                    super.onCreate(savedInstanceState);
 
                     requestWindowFeature(Window.FEATURE_NO_TITLE);
                     setContentView(R.layout.dialog_thong_bao_tro_choi);
+
                     setCancelable(true);
 
                     //anh xa view
@@ -211,30 +222,30 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
                     mButtonOk.setText("Tiếp tục");
 
 
-                    //set onclick
+                    //set onclick cho notification
                     mButtonOk.setOnClickListener(this);
                 }
                 @Override
                 public void onClick(View v) {
                     if (v.getId() == R.id.btnOk) {
                         this.dismiss();
-                        ThemChiTietLuotChoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai));
-                        SetCauHoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai));
+                        //update câu hỏi mới
+                        SetCauHoi(mListCauHoi.get(++ChiTietLuotChoi.mIndex_CauHoiHienTai));
                         //xử lý trường hợp đáp án sai và mạng = 0
-                        if (ChiTietLuotChoi.mSoLuotChoi > 0) {
+                        if (ChiTietLuotChoi.mSoLuotChoi >= 0) {
                             countDown(true);
                         }
                     }
                 }
             }.show();
         }
+
     }
 
 
     //xử lý button click
     @Override
     public void onClick(View v) {
-
 
         switch (v.getId()) {
             case R.id.lnDapAnA:
@@ -254,32 +265,33 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
 
 
     //them chi tiết để lưu thông tin
-    public void ThemChiTietLuotChoi(CauHoi cauHoi) {
-        mListChiTietLuotChoi.add(new ChiTietLuotChoi(cauHoi.getid(),"Bỏ Trống"));
+    public void ThemChiTietLuotChoi(CauHoi cauHoi, String phuong_an) {
+        //add chitiet
+        mListChiTietLuotChoi.add(new ChiTietLuotChoi(cauHoi.getid(),phuong_an));
+
+
+
         //xử lý xóa lượt chơi
         if (ChiTietLuotChoi.mSoLuotChoi >= 0) {
+            //delete mạng
             mListCoHoiChoi[ChiTietLuotChoi.mSoLuotChoi--].setImageResource(R.drawable.vientraitim);
         } else {
             // xử lý hết lượt chơi
             new CustomDialog(this){
                 @Override
                 protected void onCreate(Bundle savedInstanceState) {
-                    super.onCreate(savedInstanceState);
-
 
                     requestWindowFeature(Window.FEATURE_NO_TITLE);
                     setContentView(R.layout.dialog_tro_choi_ket_thuc);
                     setCancelable(true);
 
                     //anh xa view
-
                     TextView mDiem = findViewById(R.id.txtDiem_dialog);
                     LinearLayout mMuaLuotChoi = findViewById(R.id.lnMuaLuotChoi);
                     LinearLayout mKetThuc = findViewById(R.id.lnKetThuc);
 
 
                     mDiem.setText(ChiTietLuotChoi.mTongTiem + "");
-
 
                     //set onclick
                     mMuaLuotChoi.setOnClickListener(this);
@@ -301,13 +313,13 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void progressToComplete() {
 
+        //dừng đếm thời gian
         countDown(false);
+
         //show dialog
         new CustomDialog(this) {
             @Override
             protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-
 
                 requestWindowFeature(Window.FEATURE_NO_TITLE);
                 setContentView(R.layout.dialog_thong_bao_tro_choi);
@@ -322,33 +334,39 @@ public class TroChoiActivity extends AppCompatActivity implements View.OnClickLi
                 mContent.setText("Hết Giờ !");
                 mButtonOk.setText("Ok");
 
-
                 //set onclick
                 mButtonOk.setOnClickListener(this);
             }
 
+            //xử lý onclick cho Dialog
             @Override
             public void onClick(View v) {
                 if (v.getId() == R.id.btnOk) {
                     this.dismiss();
                     progress = 0;
 
-                    SetCauHoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai));
-                    ThemChiTietLuotChoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai));
-                    countDown(true);
+                    //add chi tiết cho trường hợp hết giờ
+                    ThemChiTietLuotChoi(mListCauHoi.get(ChiTietLuotChoi.mIndex_CauHoiHienTai), "Bỏ Trống");
+                    //update câu hỏi mới
+                    SetCauHoi(mListCauHoi.get(++ChiTietLuotChoi.mIndex_CauHoiHienTai));
+
+                    if (ChiTietLuotChoi.mSoLuotChoi >= 0) {
+                        countDown(true);
+                    }
                 }
             }
         }.show();
-
 
     }
 
     @Override
     public void finish() {
         super.finish();
+
+        //reset lại các giá trị
         ChiTietLuotChoi.mTongTiem = 0;
         ChiTietLuotChoi.mSoLuotChoi = 4;
-        ChiTietLuotChoi.mIndex_CauHoiHienTai = 1;
+        ChiTietLuotChoi.mIndex_CauHoiHienTai = 0;
         ChiTietLuotChoi.mThuTuDiemCauHoi = 0;
         ChiTietLuotChoi.mTongSoCauDung = 0;
     }

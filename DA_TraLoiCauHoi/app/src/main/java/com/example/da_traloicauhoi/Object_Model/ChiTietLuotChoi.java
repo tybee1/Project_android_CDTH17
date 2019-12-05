@@ -5,7 +5,7 @@ public class ChiTietLuotChoi {
     private int cau_hoi_id;
     private String phuong_an;
     private int diem;
-    public static int mIndex_CauHoiHienTai = 1;
+    public static int mIndex_CauHoiHienTai = 0;
     public static int mTongSoCauDung = 0;
     public static int mTongTiem = 0;
     public static int mSoLuotChoi = 4;
@@ -15,6 +15,11 @@ public class ChiTietLuotChoi {
         this.cau_hoi_id = cau_hoi_id;
         this.phuong_an = phuong_an;
         this.diem = 0;
+    }
+    public ChiTietLuotChoi( int cau_hoi_id, String phuong_an, int diem) {
+        this.cau_hoi_id = cau_hoi_id;
+        this.phuong_an = phuong_an;
+        this.diem = diem;
     }
 
 

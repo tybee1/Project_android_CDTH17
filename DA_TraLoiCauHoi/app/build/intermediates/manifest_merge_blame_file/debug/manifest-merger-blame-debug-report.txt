@@ -15,56 +15,57 @@
 11-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:7:5-28:19
+13-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:7:5-29:19
 14        android:allowBackup="true"
-14-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:8:9-35
+14-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:9:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.1.0] C:\Users\TYTRUONG\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:9:9-43
+17-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:10:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:10:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:11:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
+18-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:11:9-41
+19        android:networkSecurityConfig="@xml/network_security"
+19-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:8:9-62
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-35
 22        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-22-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:13:9-65
+22-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-65
 23        <activity android:name="com.example.da_traloicauhoi.UI_Controller.LinhVucActivity" />
-23-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:9-76
-23-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:14:19-64
+23-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-76
+23-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-64
 24        <activity android:name="com.example.da_traloicauhoi.UI_Controller.MuaCreditActivity" />
-24-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:9-69
-24-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:15:19-66
+24-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:9-69
+24-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:19-66
 25        <activity android:name="com.example.da_traloicauhoi.UI_Controller.TroChoiActivity" />
-25-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:9-67
-25-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:16:19-64
+25-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:9-67
+25-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:19-64
 26        <activity android:name="com.example.da_traloicauhoi.UI_Controller.QuanLyTKActivity" />
-26-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:9-68
-26-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:17:19-65
+26-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:9-68
+26-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:19-65
 27        <activity android:name="com.example.da_traloicauhoi.UI_Controller.ManHinhChinhActivity" />
-27-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:9-72
-27-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:18:19-69
+27-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:9-72
+27-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:19-69
 28        <activity android:name="com.example.da_traloicauhoi.UI_Controller.DangKyActivity" />
-28-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:9-66
-28-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:19:19-63
+28-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:9-66
+28-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:19-63
 29        <activity android:name="com.example.da_traloicauhoi.UI_Controller.QuenMayKhauActivity" />
-29-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:9-71
-29-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:20:19-68
+29-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:21:9-71
+29-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:21:19-68
 30        <activity android:name="com.example.da_traloicauhoi.UI_Controller.MainActivity" >
-30-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:21:9-27:20
-30-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:21:19-61
+30-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:9-28:20
+30-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:19-61
 31            <intent-filter>
-31-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:22:13-26:29
+31-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:23:13-27:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:23:17-69
-32-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:23:25-66
+32-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:24:17-69
+32-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:24:25-66
 33
 34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:25:17-77
-34-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:25:27-74
+34-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:26:17-77
+34-->C:\Users\TYTRUONG\Documents\GitHub\SanPham\Project_android_CDTH17\DA_TraLoiCauHoi\app\src\main\AndroidManifest.xml:26:27-74
 35            </intent-filter>
 36        </activity>
 37

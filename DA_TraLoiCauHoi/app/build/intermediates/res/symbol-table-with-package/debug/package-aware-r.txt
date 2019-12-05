@@ -821,7 +821,6 @@ id chronometer
 id collapseActionView
 id content
 id contentPanel
-id creditUser
 id creditUser_icon
 id credit_LinhVuc
 id custom
@@ -968,6 +967,7 @@ id topPanel
 id trogiup
 id txtContent
 id txtCredit_ManHinhChinh
+id txtCredit_Muacredit
 id txtCredit_TroChoi
 id txtDapAnA
 id txtDapAnB
@@ -992,6 +992,7 @@ id txtSoCau_LinhVuc
 id txtTitle
 id txtTotalCredit
 id txtTotalUSD
+id txtUsername_MuaCredit
 id unchecked
 id uniform
 id up
@@ -1492,3 +1493,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml network_security
