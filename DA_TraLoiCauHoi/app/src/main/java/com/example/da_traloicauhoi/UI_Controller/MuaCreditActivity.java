@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.da_traloicauhoi.Object_Model.Credit;
+import com.example.da_traloicauhoi.Object_Model.User;
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.UserSingleTon;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CreditAdapter;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
@@ -28,8 +30,7 @@ public class MuaCreditActivity extends AppCompatActivity {
     private TextView mUserName, mCreditUser;
     private CreditAdapter mApdaterCredit;
     private ArrayList<Credit> listCredit;
-    private JSONObject jsonObject;
-    private int mID_NguoiChoi;
+    private User user;
 
 
     @Override
@@ -47,12 +48,10 @@ public class MuaCreditActivity extends AppCompatActivity {
 
         recyclerView_credit.setLayoutManager(new GridLayoutManager(this,2));
 
-        Intent intent  = getIntent();
-        try {
-            jsonObject = new JSONObject(intent.getStringExtra("json"));
-            mID_NguoiChoi = jsonObject.getInt("id");
-            mUserName.setText(jsonObject.getString("ten_dang_nhap"));
-            mCreditUser.setText(jsonObject.getString("credit"));
+
+        user = UserSingleTon.getInstance(null).getUser();
+        mUserName.setText(user.getTen_dang_nhap());
+        mCreditUser.setText(user.getCredit() + "");
             //tạo asyntask đẻ gọi api
             new API_AsyncTask(this, NetworkUtils.GET,null,"Load data", "Waiting...."){
                 @Override
@@ -64,7 +63,7 @@ public class MuaCreditActivity extends AppCompatActivity {
                             JSONObject objCredit = jsonCredit.getJSONObject(i);
                             listCredit.add(new Credit(objCredit));
                         }
-                        mApdaterCredit = new CreditAdapter(context, listCredit,mID_NguoiChoi);
+                        mApdaterCredit = new CreditAdapter(context, listCredit,user,mCreditUser);
                         recyclerView_credit.setAdapter(mApdaterCredit);
 
                     } else {
@@ -73,8 +72,6 @@ public class MuaCreditActivity extends AppCompatActivity {
                 }
 
             }.execute("credit");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+
     }
 }

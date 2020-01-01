@@ -11,11 +11,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;

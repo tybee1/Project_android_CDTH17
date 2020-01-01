@@ -19,6 +19,7 @@ public class CauHinhCauHoi {
     }
 
     public int getThu_tu() {
+
         return thu_tu;
     }
 

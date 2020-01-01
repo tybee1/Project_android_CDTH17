@@ -9,9 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
 
 import org.json.JSONException;
@@ -28,6 +26,8 @@ public class DangKyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_ky);
         InitView();
+
+
     }
 
     public void InitView(){
@@ -72,7 +72,8 @@ public class DangKyActivity extends AppCompatActivity {
                 }.execute("nguoi-choi/dang-ky");
             //---end call api
         } else {
-            Toast.makeText(this,"Sai định dạng.",Toast.LENGTH_SHORT).show();
+
+            Toast.makeText(this, "Sai định dạng.", Toast.LENGTH_SHORT).show();
         }
 
     }

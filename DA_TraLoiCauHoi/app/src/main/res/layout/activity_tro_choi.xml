@@ -19,7 +19,7 @@
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="30dp"
-            android:background="#428bca"
+            android:background="@drawable/custom_button"
             android:layout_width="wrap_content"
             android:weightSum="2"
             android:gravity="center"
@@ -34,42 +34,40 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="0dp"
-                android:background="@drawable/custom_button"
-                android:weightSum="5"
                 android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/imgTraiTim_1"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:id="@+id/imgTraiTim_2"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:id="@+id/imgTraiTim_3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:id="@+id/imgTraiTim_4"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:id="@+id/imgTraiTim_5"
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
             </LinearLayout>
         </LinearLayout>
         <Button
@@ -335,12 +333,13 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp">
+
             <Button
                 android:id="@+id/btnQuaCau"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@drawable/quacau"
-                android:layout_height="wrap_content"></Button>
+                android:background="@drawable/quacau"></Button>
             <Button
                 android:id="@+id/btnLoai2"
                 android:layout_weight="1"
@@ -359,13 +358,14 @@
                 android:background="@drawable/hoinhom"
                 android:layout_height="wrap_content"></Button>
             <Button
-                android:id="@+id/GoiDien"
+                android:id="@+id/btnGoiDien"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/phone"
                 android:layout_height="wrap_content"></Button>
             <LinearLayout
+                android:id="@+id/lnMuaDapAn"
                 android:orientation="horizontal"
                 android:layout_weight="2"
                 android:layout_width="0dp"
@@ -374,7 +374,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/txtMuadapan"
+
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -384,7 +384,7 @@
                     android:layout_height="match_parent"
                     android:text="100"></TextView>
                 <Button
-                    android:id="@+id/btndungCredit"
+
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:background="@drawable/kimcuong"

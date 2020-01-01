@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.da_traloicauhoi.Object_Model.Credit;
+import com.example.da_traloicauhoi.Object_Model.User;
 import com.example.da_traloicauhoi.R;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
@@ -29,11 +30,13 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.ViewHolder
 
     private Context context;
     private ArrayList<Credit> listCredit;
-    private int id_nguoi_choi;
-    public CreditAdapter(Context context, ArrayList<Credit> listCredit, int id_nguoi_choi) {
+    private User user;
+    private TextView credit;
+    public CreditAdapter(Context context, ArrayList<Credit> listCredit, User user, TextView credit) {
         this.context = context;
         this.listCredit = listCredit;
-        this.id_nguoi_choi = id_nguoi_choi;
+        this.user = user;
+        this.credit = credit;
     }
 
 
@@ -77,15 +80,19 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.ViewHolder
 
             Credit objCredit = listCredit.get(getAdapterPosition());
             Map<String, String> paramet = new HashMap<>();
-            paramet.put("id_nguoi_choi",id_nguoi_choi+"");
+            paramet.put("id_nguoi_choi",user.getId()+"");
             paramet.put("credit_id",objCredit.getId()+"");
             paramet.put("credit",objCredit.getCredit()+"");
             paramet.put("so_tien",objCredit.getSo_tien()+"");
+
+            final int payCredit = objCredit.getCredit();
 
             new API_AsyncTask(context, NetworkUtils.POST,paramet,"Mua credit","Wating..."){
                 @Override
                 public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
                     if (jsonObject.getBoolean("success") == true) {
+                        user.setCredit(user.getCredit() + payCredit);
+                        credit.setText(user.getCredit() + "");
                         new CustomDialog(context, "Thông báo", "Đã mua.", "Ok", CustomDialog.SIZE_M).show();
 
                     } else {

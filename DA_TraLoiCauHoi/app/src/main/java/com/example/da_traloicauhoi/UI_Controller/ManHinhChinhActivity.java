@@ -13,7 +13,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.da_traloicauhoi.Object_Model.User;
 import com.example.da_traloicauhoi.R;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.UserSingleTon;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
 
 import org.json.JSONException;
@@ -22,8 +24,8 @@ import org.json.JSONObject;
 public class ManHinhChinhActivity extends AppCompatActivity {
     private ImageView imgDaiDien;
     private TextView txtTen, txtCredit;
-    private JSONObject jsonObject;
     private  Bitmap bitmap;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,35 +41,25 @@ public class ManHinhChinhActivity extends AppCompatActivity {
         txtTen = findViewById(R.id.txtHoVaTen_ManHinhChinh);
         txtCredit = findViewById(R.id.txtCredit_ManHinhChinh);
 
-        //lấy dữ liệu từ intent
-        Intent intent = getIntent();
-        try {
-            //nhận json từ đăng nhập
-            jsonObject  =  new JSONObject(intent.getStringExtra("json"));
+        user = UserSingleTon.getInstance(null).getUser();
 
-            txtTen.setText(jsonObject.getString("ten_dang_nhap"));
-            txtCredit.setText(jsonObject.getString("credit"));
-            String anhDaiDien = SharedPreference.readFile(this,jsonObject.getString("ten_dang_nhap"));
+        txtTen.setText(user.getTen_dang_nhap());
+        txtCredit.setText(user.getCredit() + "");
 
-            byte[] decodeString = Base64.decode(anhDaiDien,Base64.DEFAULT);
-            bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
-            imgDaiDien.setImageBitmap(bitmap);
+        byte[] decodeString = Base64.decode(user.getHinh_dai_dien(),Base64.DEFAULT);
+        bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
+        imgDaiDien.setImageBitmap(bitmap);
 
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 
     public void HandleQuanLyTK(View view) {
         Intent intent = new Intent(this, QuanLyTKActivity.class);
-        intent.putExtra("json",jsonObject.toString());
         startActivity(intent);
     }
 
     public void HandleTroChoiMoi(View view) {
         Intent intent = new Intent(this, LinhVucActivity.class);
-        intent.putExtra("json",jsonObject.toString());
         startActivity(intent);
     }
 
@@ -76,26 +68,27 @@ public class ManHinhChinhActivity extends AppCompatActivity {
     }
 
     public void HandleBangXepHang(View view) {
+        Intent intent = new Intent(this, BangXepHangActivity.class);
+        startActivity(intent);
     }
 
     public void HandleMuaCredit(View view) {
         Intent  intent = new Intent(this, MuaCreditActivity.class);
-        intent.putExtra("json",jsonObject.toString());
         startActivity(intent);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        String anhDaiDien = null;
-        try {
-            anhDaiDien = SharedPreference.readFile(this,jsonObject.getString("ten_dang_nhap"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        byte[] decodeString = Base64.decode(anhDaiDien,Base64.DEFAULT);
-        bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
-        imgDaiDien.setImageBitmap(bitmap);
+//        String anhDaiDien = null;
+//        try {
+//            anhDaiDien = SharedPreference.readFile(this,jsonObject.getString("ten_dang_nhap"));
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//
+//        byte[] decodeString = Base64.decode(anhDaiDien,Base64.DEFAULT);
+//        bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
+//        imgDaiDien.setImageBitmap(bitmap);
     }
 }

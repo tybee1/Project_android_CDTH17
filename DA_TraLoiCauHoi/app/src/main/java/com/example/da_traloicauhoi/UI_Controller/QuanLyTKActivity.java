@@ -17,11 +17,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.da_traloicauhoi.Object_Model.User;
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.UserSingleTon;
 import com.example.da_traloicauhoi.Ultils.SharedPreference;
 
 import org.json.JSONException;
@@ -34,9 +34,9 @@ import java.util.Map;
 
 public class QuanLyTKActivity extends AppCompatActivity {
     private EditText mTaiKhoan, mEmail, mMatKhau, mXacNhanMatKhau;
-    private JSONObject mJsonObject;
+    private User user;
     private ImageView mHinhDaiDien;
-    private String mEncodeAnhDaiDien;
+    private String mEncodeImgTemp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,23 +54,16 @@ public class QuanLyTKActivity extends AppCompatActivity {
         mXacNhanMatKhau = findViewById(R.id.edtXacNhanMatKhau_QLTK);
         mHinhDaiDien = findViewById(R.id.imgHinhDaiDien_QLTK);
 
-        //get intent
-        Intent intent = getIntent();
-        try {
-            mJsonObject = new JSONObject(intent.getStringExtra("json"));
-            mTaiKhoan.setText(mJsonObject.getString("ten_dang_nhap"));
-            mEmail.setText(mJsonObject.getString("email"));
+        user = UserSingleTon.getInstance(null).getUser();
+        mTaiKhoan.setText(user.getTen_dang_nhap());
+        mEmail.setText(user.getEmail());
 
-            //lấy ảnh từ Shared
-            mEncodeAnhDaiDien = SharedPreference.readFile(this,mJsonObject.getString("ten_dang_nhap"));
 
-            byte[] decodeString = Base64.decode(mEncodeAnhDaiDien,Base64.DEFAULT);
-            Bitmap bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
-            mHinhDaiDien.setImageBitmap(bitmap);
-            mEncodeAnhDaiDien = mJsonObject.getString("hinh_dai_dien");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        byte[] decodeString = Base64.decode(user.getHinh_dai_dien(),Base64.DEFAULT);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(decodeString,0,decodeString.length);
+        mHinhDaiDien.setImageBitmap(bitmap);
+
+        
 
     }
 
@@ -80,16 +73,22 @@ public class QuanLyTKActivity extends AppCompatActivity {
 
             Map<String, String> paramet = new HashMap<>();
 
-            paramet.put("ten_dang_nhap",mTaiKhoan.getText().toString());
+            paramet.put("ten_dang_nhap",user.getTen_dang_nhap());
             paramet.put("mat_khau",matKhauMoi);
-            paramet.put("hinh_dai_dien",mEncodeAnhDaiDien);
-            SharedPreference.writeFile(this,mTaiKhoan.getText().toString(),mEncodeAnhDaiDien);
+            paramet.put("hinh_dai_dien",mEncodeImgTemp);
+            paramet.put("diem_cao_nhat",user.getDiem_cao_nhat() +"");
+            paramet.put("credit",user.getCredit() + "");
+            paramet.put("email",user.getEmail());
+
+
 
             //Gọi api bởi Asynctask
             new API_AsyncTask(this, NetworkUtils.POST,paramet){
                 @Override
                 public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
                     if (jsonObject.getBoolean("success") == true) {
+                        user.setHinh_dai_dien(mEncodeImgTemp);
+
                         Toast.makeText(context, "Cập nhật thành công.", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(context, "Cập nhật thất bại.", Toast.LENGTH_SHORT).show();
@@ -119,8 +118,8 @@ public class QuanLyTKActivity extends AppCompatActivity {
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.PNG,100,baos);
                 byte[] b =baos.toByteArray();
-                mEncodeAnhDaiDien = Base64.encodeToString(b,Base64.DEFAULT);
-                Log.d("Lenght_Base64",mEncodeAnhDaiDien.length()+"");
+                mEncodeImgTemp = Base64.encodeToString(b,Base64.DEFAULT);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

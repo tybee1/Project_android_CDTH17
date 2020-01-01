@@ -7,17 +7,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.ProgressBar;
 
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
-import com.example.da_traloicauhoi.Ultils.Algorithrm;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.UserSingleTon;
 import com.example.da_traloicauhoi.Ultils.Custom_Dialog_Adapter.CustomDialog;
-import com.example.da_traloicauhoi.Ultils.SharedPreference;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //initialize views
         InitView();
 
+
     }
 
     public void InitView(){
@@ -48,15 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void handleLogin(View view) {
-
-
         String ten_dang_nhap = edtTenDangNhap.getText().toString();
         String mat_khau = edtMatKhau.getText().toString();
-
 
         if (ten_dang_nhap.equals("") || mat_khau.equals("")) {
             new CustomDialog(this, "Thông báo", "Tài khoản và mật khẩu không được trống.", "Ok", CustomDialog.SIZE_M).show();
         } else {
+
             //tham số request
             Map<String, String> map = new HashMap<>();
 
@@ -70,20 +69,24 @@ public class MainActivity extends AppCompatActivity {
                     if (jsonObject.getBoolean("success") == true) {
                         //tạo đối tượng JsonNguoiChoi
                         JSONObject jsonNguoiChoi = (JSONObject) jsonObject.getJSONArray("data").get(0);
-                        //luu file anh
-                        SharedPreference.writeFile(context,jsonNguoiChoi.getString("ten_dang_nhap"),jsonObject.getString("image"));
-                        //Gửi đối tượng người chơi qua 1 activity
+
+                        //khoi tao thong tin nguoi choi
+                        UserSingleTon.getInstance(jsonNguoiChoi);
+
+                       //start activity
                         Intent intent = new Intent(context, ManHinhChinhActivity.class);
-                        intent.putExtra("json", jsonNguoiChoi.toString());
                         startActivity(intent);
-                    } else {
+                    }
+                    else {
                         new CustomDialog(context, "Thông báo", "Sai tài khoản hoặc mật khẩu.", "Ok", CustomDialog.SIZE_M).show();
                     }
-                }
 
+                }
             }.execute("nguoi-choi/xac-thuc");
 
         }
+
+
 
 
     }
@@ -100,5 +103,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void HandleAPIGmail(View view){
+
     }
 }

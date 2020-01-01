@@ -24,7 +24,7 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
     private String content;
     private String textButton;
     private int SIZE;
-    public static int SIZE_M = 15, SIZE_L = 20;
+    public static int SIZE_M = 15, SIZE_L = 20, SIZE_XL = 50;
 
     public CustomDialog(@NonNull Context context, String title, String content, String textButton, int SIZE) {
         super(context);
@@ -60,6 +60,9 @@ public class CustomDialog extends Dialog implements android.view.View.OnClickLis
 
         //set onclick
         mButtonOk.setOnClickListener(this);
+    }
+    public Context Context(){
+        return this.context;
     }
 
     @Override

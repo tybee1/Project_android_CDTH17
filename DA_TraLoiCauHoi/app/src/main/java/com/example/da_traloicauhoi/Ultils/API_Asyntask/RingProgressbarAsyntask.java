@@ -2,6 +2,7 @@ package com.example.da_traloicauhoi.Ultils.API_Asyntask;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.widget.TextView;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
@@ -11,12 +12,14 @@ public class RingProgressbarAsyntask extends AsyncTask<Void,Integer, Void> {
     private Context context;
     private int start;
     private int end;
+    private TextView mSecond;
 
-    public RingProgressbarAsyntask( Context context,RingProgressBar ringProgressBar, int start, int end) {
+    public RingProgressbarAsyntask( Context context,RingProgressBar ringProgressBar, int start, int end, TextView Second) {
         this.ringProgressBar = ringProgressBar;
         this.context = context;
         this.start = start;
         this.end = end;
+        this.mSecond = Second;
     }
 
     public RingProgressbarAsyntask(Context context, RingProgressBar ringProgressBar, int end) {
@@ -28,6 +31,7 @@ public class RingProgressbarAsyntask extends AsyncTask<Void,Integer, Void> {
 
     @Override
     protected Void doInBackground(Void... Void) {
+
         for (int i = start; i <= end; i++) {
             if (!this.isCancelled()) {
                 try {
@@ -54,5 +58,7 @@ public class RingProgressbarAsyntask extends AsyncTask<Void,Integer, Void> {
     @Override
     protected void onProgressUpdate(Integer... values) {
         ringProgressBar.setProgress(values[0]);
+        this.mSecond.setText(this.end - values[0] + "");
+
     }
 }

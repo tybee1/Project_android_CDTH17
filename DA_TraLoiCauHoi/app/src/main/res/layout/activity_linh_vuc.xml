@@ -19,7 +19,7 @@
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="30dp"
-            android:background="#428bca"
+            android:background="@drawable/custom_button"
             android:layout_width="wrap_content"
             android:weightSum="2"
             android:gravity="center"
@@ -34,36 +34,35 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="0dp"
-                android:background="@drawable/custom_button"
                 android:weightSum="5"
                 android:layout_height="match_parent">
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
-                <ImageView
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
 
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/traitimfull"></ImageView>
+
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
             </LinearLayout>
         </LinearLayout>
         <Button

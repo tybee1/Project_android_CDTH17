@@ -9,18 +9,18 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.da_traloicauhoi.Object_Model.User;
 import com.example.da_traloicauhoi.R;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.APIAsyncTask;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.API_AsyncTask;
-import com.example.da_traloicauhoi.Ultils.API_Asyntask.CallAPI;
 import com.example.da_traloicauhoi.Ultils.API_Asyntask.NetworkUtils;
+import com.example.da_traloicauhoi.Ultils.API_Asyntask.UserSingleTon;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LinhVucActivity extends AppCompatActivity implements View.OnClickListener {
-    private JSONObject jsonObject;
+    private User user;
     private LinearLayout[] mListLinhVuc_View;
     private TextView mUserName, mCredit;
     private TextView[] mListLinhVuc_NoiDung;
@@ -61,24 +61,21 @@ public class LinhVucActivity extends AppCompatActivity implements View.OnClickLi
         mListLinhVuc_View[1].setOnClickListener(this);
         mListLinhVuc_View[2].setOnClickListener(this);
         mListLinhVuc_View[3].setOnClickListener(this);
-        Intent intent  = getIntent();
-        try {
-            jsonObject = new JSONObject(intent.getStringExtra("json"));
-            mUserName.setText(jsonObject.getString("ten_dang_nhap"));
-            mCredit.setText(jsonObject.getString("credit"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+
+        user = UserSingleTon.getInstance(null).getUser();
+        mUserName.setText(user.getTen_dang_nhap());
+        mCredit.setText(user.getCredit()+"");
+
 
         new API_AsyncTask(this, NetworkUtils.GET,null,"Get Data", "Loading..."){
             @Override
             public void XuLy(JSONObject jsonObject, Context context) throws JSONException {
                 //gán nội dung các lĩnh vực
                 if (jsonObject.getBoolean("success") == true) {
-                    JSONArray dataCauHoi = jsonObject.getJSONArray("data");
-                    for (int i = 0; i < dataCauHoi.length(); i++) {
-                        mListLinhVuc_ID[i] =  dataCauHoi.getJSONObject(i).getInt("id");
-                        mListLinhVuc_NoiDung[i].setText(dataCauHoi.getJSONObject(i).getString("ten_linh_vuc"));
+                    JSONArray dataLinhVuc = jsonObject.getJSONArray("data");
+                    for (int i = 0; i < dataLinhVuc.length(); i++) {
+                        mListLinhVuc_ID[i] =  dataLinhVuc.getJSONObject(i).getInt("id");
+                        mListLinhVuc_NoiDung[i].setText(dataLinhVuc.getJSONObject(i).getString("ten_linh_vuc"));
                     }
                 }
             }
@@ -88,7 +85,6 @@ public class LinhVucActivity extends AppCompatActivity implements View.OnClickLi
     public void StartActivity(int id_LinhVuc) {
         Intent intent = new Intent(this,TroChoiActivity.class);
         intent.putExtra("linh_vuc_id",id_LinhVuc);
-        intent.putExtra("json",jsonObject.toString());
         startActivity(intent);
     }
 
