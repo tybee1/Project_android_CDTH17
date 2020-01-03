@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtSTT_BXH"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/custom_number_bxh_top1"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="20sp"></TextView>1
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_card"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <ImageView
+                android:id="@+id/imgUser_BXH"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gmail"></ImageView>
+            <TextView
+                android:id="@+id/txtTen_BXH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="truongvanty"></TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDiemCaoNhat_BXH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="5.0000"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

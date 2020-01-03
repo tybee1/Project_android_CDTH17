@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorEdit">#423D3F</color>
+    <color name="colorTroGiup">#7b4812</color>
+    <color name="colorProgressbar">#e61610</color>
+    <color name="colorDiem">#c34572</color>
+    <color name="colorDialog">#66DBBF</color>
+    <color name="colorDapAn">#f8f4f8</color>
+</resources>

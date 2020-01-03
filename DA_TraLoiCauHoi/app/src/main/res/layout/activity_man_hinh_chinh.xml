@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_marginTop ="30dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        icon app-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">q
+            <ImageView
+                android:layout_weight="2"
+                android:id="@+id/imgAnhDaiDien_Chinh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/avart"></ImageView>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/txtHoVaTen_ManHinhChinh"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tytruong">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_below="@+id/txtHoVaTen"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgDiamon"
+                        android:src="@drawable/diamond"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"></ImageView>
+                    <TextView
+                        android:layout_toRightOf="@id/imgDiamon"
+                        android:gravity="center"
+                        android:id="@+id/txtCredit_ManHinhChinh"
+                        android:textColor="#ffa834"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="2000"></TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--    các control đang nhập-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="3"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btnQuanLyTK"
+                android:background="@drawable/custom_button_green"
+                android:onClick="HandleQuanLyTK"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:textColor="#f8f4f8"
+                android:text="Quản lý tài khoản"></Button>
+            <Button
+                android:id="@+id/btnTroChoiMoi"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_width="match_parent"
+                android:onClick="HandleTroChoiMoi"
+                android:text="Trò chơi mới"
+                android:layout_marginTop="10dp"
+                android:textColor="#f8f4f8"
+                android:layout_height="0dp"></Button>
+
+            <Button
+                android:id="@+id/btnLichSuChoi"
+                android:background="@drawable/custom_button_qmk"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:onClick="HandleLichSuChoi"
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:textColor="#f8f4f8"
+                android:text="Lịch sử chơi"></Button>
+            <Button
+                android:id="@+id/btnBangXepHang"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_dk"
+                android:layout_width="match_parent"
+                android:onClick="HandleBangXepHang"
+                android:text="Bảng xếp hạng"
+                android:layout_marginTop="10dp"
+                android:textColor="#f8f4f8"
+                android:layout_height="0dp"></Button>
+            <Button
+                android:id="@+id/btnMuaCredit"
+                android:text="Mua credit"
+                android:onClick="HandleMuaCredit"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_orange"
+                android:layout_width="match_parent"
+                android:textColor="#f8f4f8"
+                android:layout_height="0dp"></Button>
+        </LinearLayout>
+        <!--    API bên thứ 3-->
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

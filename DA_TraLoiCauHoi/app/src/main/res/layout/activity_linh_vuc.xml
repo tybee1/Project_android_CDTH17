@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:weightSum="15"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    Header-->
+    <RelativeLayout
+        android:id="@+id/inforHead"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/credit_LinhVuc"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtName_LinhVuc"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="tytruong"></TextView>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:weightSum="5"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/traitimfull"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/creditUser_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:background="@drawable/kimcuong"
+            android:layout_height="match_parent"></Button>
+        <TextView
+            android:id="@+id/credit_LinhVuc"
+            android:layout_toLeftOf="@+id/creditUser_icon"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="2000"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button_orange"></TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_marginTop ="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_weight="11"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--      Thông tin câu hỏi  -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/txtDiem_LinhVuc"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/colorDiem"
+                android:layout_height="0dp"
+                android:text="Điểm : 0"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:textColor="#259dbc"
+                android:gravity="center"
+                android:text="Câu hỏi"></TextView>
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/txtSoCau_LinhVuc"
+                android:background="@drawable/custom_button"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#DEDEE4"
+                android:text="1"></TextView>
+
+
+
+
+        </LinearLayout>
+
+
+        <!--        Đáp án và nội dung câu hỏi-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <!--            Linh Vuc 1-->
+            <LinearLayout
+                android:id="@+id/lnLinhVuc_1"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:onClick="HandleChooseLinhVuc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="1."></TextView>
+                <TextView
+                    android:id="@+id/txtLinhVuc_1"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <!--            Linh Vuc 2-->
+            <LinearLayout
+                android:id="@+id/lnLinhVuc_2"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="2."></TextView>
+                <TextView
+                    android:id="@+id/txtLinhVuc_2"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <!--            Linh Vuc 3-->
+            <LinearLayout
+                android:id="@+id/lnLinhVuc_3"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="3."></TextView>
+                <TextView
+                    android:id="@+id/txtLinhVuc_3"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <!--            Linh vuc 4-->
+            <LinearLayout
+                android:id="@+id/lnLinhVuc_4"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="5dp"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDapAn"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="match_parent"
+                    android:text="4."></TextView>
+                <TextView
+                    android:id="@+id/txtLinhVuc_4"
+                    android:layout_weight="5"
+                    android:background="@drawable/custom_button"
+                    android:layout_width="0dp"
+                    android:text="Triều Ngô"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDapAn"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--    Cấu hình trợ giúp-->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_below="@+id/top"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

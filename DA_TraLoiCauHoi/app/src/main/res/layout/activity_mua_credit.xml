@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    Header-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:id="@+id/inforHead"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/txtCredit_Muacredit"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:background="#428bca"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtUsername_MuaCredit"
+                    android:layout_width="0dp"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="tytruong"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></TextView>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/creditUser_icon"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="50dp"
+                android:background="@drawable/kimcuong"
+                android:layout_height="match_parent"></Button>
+            <TextView
+                android:id="@+id/txtCredit_Muacredit"
+                android:layout_toLeftOf="@+id/creditUser_icon"
+                android:layout_width="wrap_content"
+
+                android:text="2000"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/custom_button_orange"></TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Mua Credit"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_muacredit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="4"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Lấy lại mật khẩu"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></TextView>
+    <EditText
+
+        android:id="@+id/edtMatKhauMoi"
+        android:hint="Nhập mật khẩu mới"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></EditText>
+    <EditText
+        android:id="@+id/edtXacNhanMatKhau"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu mới"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></EditText>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="0dp"
+            android:text="Đồng ý"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:id="@+id/btnHuyMK"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</LinearLayout>

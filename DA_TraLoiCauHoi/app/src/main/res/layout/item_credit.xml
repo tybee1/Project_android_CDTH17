@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+                <LinearLayout
+                    android:id="@+id/lnCredit_item"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/colorTroGiup"
+                    android:weightSum="4"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/txtTotalCredit"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#f4eb49"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="0dp"
+                        android:text="5.000"></TextView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/diamond"
+                        android:layout_height="0dp"></ImageView>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtTotalUSD"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="$450"></TextView>
+</LinearLayout>
